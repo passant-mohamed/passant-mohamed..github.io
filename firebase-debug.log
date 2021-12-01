@@ -1,0 +1,56 @@
+[debug] [2021-12-01T10:09:21.819Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T10:09:21.821Z] Command:       /usr/local/bin/firebase /Users/admin/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-12-01T10:09:21.821Z] CLI Version:   9.6.1
+[debug] [2021-12-01T10:09:21.821Z] Platform:      darwin
+[debug] [2021-12-01T10:09:21.821Z] Node Version:  v12.18.1
+[debug] [2021-12-01T10:09:21.822Z] Time:          Wed Dec 01 2021 12:09:21 GMT+0200 (Eastern European Standard Time)
+[debug] [2021-12-01T10:09:21.822Z] ----------------------------------------------------------------------
+[debug] [2021-12-01T10:09:21.823Z] 
+[debug] [2021-12-01T10:09:21.826Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-01T10:09:21.826Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/admin/development/flutterProjects/moc_frontend/MASIS/FrontEnd/web
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using moc-app-c88cd. 
+[debug] [2021-12-01T10:09:29.353Z] > refreshing access token with scopes: []
+[debug] [2021-12-01T10:09:29.353Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-01T10:09:30.369Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Wed, 01 Dec 2021 10:09:31 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-01T10:09:30.387Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/moc-app-c88cd [none]
+[debug] [2021-12-01T10:09:31.468Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/moc-app-c88cd 200
+[debug] [2021-12-01T10:09:31.468Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/moc-app-c88cd {"projectId":"moc-app-c88cd","projectNumber":"1003010779635","displayName":"Moc-App","name":"projects/moc-app-c88cd","resources":{"hostingSite":"moc-app-c88cd","storageBucket":"moc-app-c88cd.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-12-01T10:11:46.215Z] TypeError: Cannot read property 'setRawMode' of null
+    at ReadStream.setRawMode (tty.js:75:28)
+    at Interface._setRawMode (readline.js:290:16)
+    at Interface.close (readline.js:413:10)
+    at ReadStream.ontermend (readline.js:201:10)
+    at ReadStream.emit (events.js:327:22)
+    at ReadStream.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
