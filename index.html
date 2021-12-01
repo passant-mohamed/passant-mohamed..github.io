@@ -55,15 +55,15 @@ const firebaseConfig = {
      application. For more information, see:
      https://developers.google.com/web/fundamentals/primers/service-workers -->
 
+<!--<script>-->
+<!--  if ("serviceWorker" in navigator) {-->
+<!--      window.addEventListener("load", function () {-->
+<!--        navigator.serviceWorker.register("/firebase-messaging-sw.js");-->
+<!--      });-->
+<!--    }-->
+<!--    </script>-->
 <script>
-  if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function () {
-        navigator.serviceWorker.register("/firebase-messaging-sw.js");
-      });
-    }
-    </script>
-<script>
-    var serviceWorkerVersion = '2212367930';
+    var serviceWorkerVersion = '1936677993';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
